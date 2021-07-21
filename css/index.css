@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#app{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    /* height:60px; */
+    
+    background-color: rgba(0, 0, 0, .32);
+    position: fixed;
+    top :0;
+    left: 0;
+    right:0;
+    z-index: 1000;
+    
+}
+
+#nav {
+    
+  
+
+}
+#nav > li{
+    display:inline-block;
+   
+}
+#nav li{
+    
+    position: relative;
+    
+}
+#nav > li > a{
+    color: wheat;
+    text-transform: uppercase;
+}
+#nav li a{
+    display: block;
+    text-decoration: none;
+    
+    line-height: 60px;
+    padding: 0 24px;
+    transition:color 0.5s  ease;
+
+}
+#nav > li:hover .subnav{
+    display: block;
+    
+    
+}
+
+#nav  > li:hover > a{
+    background-color: wheat;
+    color: sienna;
+    
+ 
+    
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style-type: none;
+    min-width: 160px;
+}
+#nav .subnav a{
+    color: sienna;
+    padding: 0 12px;
+    line-height: 46px;
+}
+#nav .fa fa-caret-down{
+    font-size: 14px;
+}
+.subnav li:hover {
+    background-color: wheat;
+}
+.subnav li:hover a{
+    transform: translateX(10px);
+    transition: 5s;
+
+}
+#slider{
+   
+   position: relative;
+    width: 100%;
+   height: 100vh;  
+   
+}
+#slider .text-content {
+    
+    position: absolute; /* phụ thuộc vào thg cha */
+    text-align: center;
+    bottom: 150px;
+   
+    left:10%;
+    color: #fff;
+    
+    
+    
+}
+#slider .text-content h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#slider .text-content #text-des{
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+   z-index: -1;
+    
+}
+
+#mybtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:sienna;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  
+  #mybtn:hover {
+    background-color:wheat;
+    color: sienna;
+  }
+  #container{
+    
+      
+  }
+  #container .content-section{
+      width: 800px;
+      max-width: 100%;/*reponse khi with nhỏ < 800 */
+      margin-left: auto;
+      margin-right: auto;
+      padding: 64px 10px;
+  }
+  #container .content-section .section-head{
+      font-size: 40px;
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+     
+  }
+  #container .content-section .section-text{
+      background-color: #f1f1f1;
+      border-left: 8px solid #ccc;
+      text-align: justify;
+    line-height: 1.6 ;
+    margin-bottom: 30px;
+    padding: 16px;
+    font-style: italic;
+    font-weight: 300;
+  }
+  .section-foot{
+      font-family:  "Inconsolata", monospace; /* font gg*/
+      font-style: italic;
+      font-weight: 300;
+      padding-bottom: 10px;
+  }
+  #container .content-section img{
+      width: 100%;
+       
+  }
+  #footer{
+      background-color: aqua;
+     
+  }
+@media (min-width:740px) and (max-width:1023px){
+    #container .content-section
+    {
+       
+    }
+}
+@media (max-width:740px) {
+
+    #nav li{
+        display: block;
+    }
+    #header{height: auto;}
+
+}
