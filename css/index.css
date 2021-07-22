@@ -20,7 +20,7 @@
 
 #nav {
     
-  
+  display: inline-block;
 
 }
 #nav > li{
@@ -147,7 +147,7 @@ video {
       
   }
   #container .content-section{
-      width: 800px;
+      width: 900px;
       max-width: 100%;/*reponse khi with nhỏ < 800 */
       margin-left: auto;
       margin-right: auto;
@@ -177,25 +177,110 @@ video {
       font-weight: 300;
       padding-bottom: 10px;
   }
+  
   #container .content-section img{
       width: 100%;
        
   }
+  .storehome{
+    background-color: #EA8025;
+    
+    
+  }
+  .storehome .content-slide{
+     
+      width: 900px;
+      max-width: 100%;
+      margin-right: auto;
+    margin-left: auto;
+   
+    padding: 64px 10px;    
+  }
+  .storehome .content-slide .slide-texthead{
+    font-size: 32px;
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .storehome .content-slide .gach{
+      content: "";
+      background-color: black;
+}
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    
+  }
+  .mySlides {display: none;
+    
+    height: 600px; /* để block chua anh deu bang nhau*/}
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next{
+      right: 0;
+  }
   #footer{
-      background-color: aqua;
+    height: 300px;
+      background-color: black;
      
   }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
 @media (min-width:740px) and (max-width:1023px){
-    #container .content-section
-    {
-       
-    }
+    
 }
 @media (max-width:740px) {
+    #header{height: auto;}
+    #nav {
+        display: block; /* de hover toan block*/
+      }
 
-    #nav li{
+      #nav > li{
         display: block;
     }
-    #header{height: auto;}
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    
 
 }
