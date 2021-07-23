@@ -279,6 +279,10 @@ video {
     font-weight: 300;
     text-transform: capitalize;
   }
+  .colfooter .BOVN img{
+    max-width: 100%;
+    height: auto;
+  }
   .colfooter ul li{
     margin-bottom: 10px;
 
