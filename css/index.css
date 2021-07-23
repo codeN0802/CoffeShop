@@ -197,6 +197,7 @@ video {
     padding: 64px 10px;    
   }
   .storehome .content-slide .slide-texthead{
+    
     font-size: 32px;
     font-family: 'BebasNeue','Lato', "Times New Roman", serif;
     font-weight: 300;
@@ -205,10 +206,13 @@ video {
     color: white;
     margin-bottom: 30px;
   }
-  .storehome .content-slide .gach{
-      content: "";
-      background-color: black;
-}
+  .storehome .content-slide .slide-texthead::after {
+    content: '';
+    background: black;
+    width: 8%;
+    display: block;
+    height: 4px;
+  }
   .slideshow-container {
     position: relative;
     width: 100%;
@@ -216,7 +220,9 @@ video {
   }
   .mySlides {display: none;
     
-    height: 600px; /* để block chua anh deu bang nhau*/}
+    height: 600px; /* để block chua anh deu bang nhau*/
+    
+  }
   
   .text {
     color: #f2f2f2;
@@ -280,6 +286,12 @@ video {
     }
     #nav > li:first-child{
         display: inline-block;
+    }
+    .storehome .content-slide .slide-texthead{
+      font-size: 16px;
+    }
+    .mySlides{
+      height:300px;
     }
     
 
