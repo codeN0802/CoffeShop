@@ -151,7 +151,7 @@ video {
   }
   #container .content-section{
       width: 900px;
-      max-width: 100%;/*reponse khi with nhỏ < 800 */
+      max-width: 100%;/*reponse khi with nhỏ < 900 */
       margin-left: auto;
       margin-right: auto;
       padding: 64px 10px;
@@ -162,6 +162,7 @@ video {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 45px;
+  
 }
 #container .content-section .section-head{
 	position: relative;
@@ -366,6 +367,9 @@ video {
     }
     #nav > li:first-child{
         display: inline-block;
+    }
+    #container .content-section .section-head p{
+      font-size: 60px;
     }
     .storehome .content-slide .slide-texthead{
       font-size: 16px;
