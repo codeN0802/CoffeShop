@@ -305,6 +305,9 @@ video {
     font-weight: 300;
     text-transform: capitalize;
   }
+  .colfooter .gov{
+    margin-top: 15px;
+  }
   .colfooter ul li{
     margin-bottom: 10px;
 
@@ -380,6 +383,10 @@ video {
     .colfooter{
       width: 50%;
       margin-bottom: 30px;
+    }
+    .colfooter .gov img{
+      width: 100%;
+      height: auto;
     }
 
     
