@@ -280,7 +280,7 @@ video {
   #footer{
     background-color:black;
     color: white; 
-    padding: 70px 0;
+    padding: 70px 0 0 ;
   }
   .footer-container{
     max-width: 1170px;
@@ -338,6 +338,13 @@ video {
   .colfooter .social-icon a:hover{
     
     color: sienna;
+  }
+  .copy{
+    padding: 10px 0;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #bbbbbb;
   }
   .fade {
     -webkit-animation-name: fade;
