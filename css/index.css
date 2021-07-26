@@ -6,10 +6,11 @@
 #app{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #header{
     /* height:60px; */
     
-    background-color: rgba(0, 0, 0, .32);
+    
     position: fixed;
     top :0;
     left: 0;
@@ -17,7 +18,9 @@
     z-index: 1000;
     
 }
-
+.bgColor{
+  background-color: black;
+}
 #nav {
     
   display: inline-block;
@@ -49,24 +52,19 @@
 #nav > li:hover .subnav{
     display: block;
     
-    
+
 }
 
 #nav  > li:hover > a{
     background-color: wheat;
-    color: sienna;
-    
- 
-    
+    color: sienna;   
 }
-
 #nav .subnav{
     display: none;
     position: absolute;
     background-color: #fff;
     list-style-type: none;
     min-width: 160px;
-	
 }
 #nav .subnav a{
     color: sienna;
