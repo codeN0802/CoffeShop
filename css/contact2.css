@@ -1,0 +1,116 @@
+/*
+ssss*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}#app{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 6000px;
+}
+#header{
+    height: 56px;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: #000000;
+    z-index: 1000;
+}
+#nav{
+    display: inline-block;
+    font-weight: bold;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav > li > a{
+    color: wheat;
+    text-transform: uppercase;
+}
+#nav li a{
+    display: block;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 56px;
+    transition: color 0.5s ease;
+}
+#nav > li:hover > a{
+    color: sienna;
+    background-color: wheat;
+}
+#nav > li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: white;
+    min-width: 160px;
+}
+#nav .subnav a{
+    color: sienna;
+    padding: 0 12px;
+    line-height: 46px;
+}
+#nav .fa fa-caret-down{
+    font-size: 14px;
+}
+#nav .subnav li:hover{
+    background-color: wheat;
+}
+#nav .subnav li:hover a{
+    transform: translateX(10px);
+    transition: 5s;
+}
+.menu-nav{
+    display: none;
+    position: absolute;
+    float: right;
+    padding: 0 24px;
+    top: 0;
+    right: 0;
+    line-height: 56px;
+}
+.menu-nav i {
+    color: wheat;
+    font-size: 26px;
+}
+.menu-nav:hover {
+    background-color: wheat;
+}
+.menu-nav:hover i{
+    color: sienna;
+}
+#slider{
+    margin-top: 56px;
+}
+@media (max-width:740px){
+    #header{
+        overflow: hidden;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li
+    {
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+    }
+    #nav .subnav a{
+        padding: 0 41px;
+    }
+    .menu-nav{
+        display: inline-block;
+    }
+
+}
