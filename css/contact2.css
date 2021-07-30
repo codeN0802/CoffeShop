@@ -6,7 +6,7 @@ ssss*/
     box-sizing: border-box;
 }#app{
     font-family: Arial, Helvetica, sans-serif;
-    height: 6000px;
+    
 }
 #header{
     height: 56px;
@@ -88,6 +88,227 @@ ssss*/
 }
 #slider{
     margin-top: 56px;
+    background-image: url(//file.hstatic.net/1000075078/file/3e0a8783_master.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 25%; /* cao bang 25% rong*/
+}
+#slider .text-heading{
+    color: #f2f2f2;
+    font-size: 36px;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading a{
+    text-decoration: none;
+    font-family: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+}
+#main{
+    padding: 70px 0 0  /* top right-left -bottom*/;
+    
+}
+.container{
+    
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-container .col-container{
+    width: 50%;
+    padding: 0 15px;
+}
+.colchild{
+    width: 100%;
+    padding:0 15px ;
+    margin-bottom: 30px;
+}
+.tilte-block{
+    position: relative;
+    font-family: Open Sans;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding:10px 0;
+    color: #000;
+    letter-spacing: 4px;
+}
+.content-block ul li{
+    font-family:  Open Sans;
+    list-style-type: none;
+    font-size: 18px;
+    position: relative;
+    padding: 15px 0px 15px 50px;
+}
+.content-block ul li::before{
+    content: "";
+    position: absolute;
+    top:14px;
+    left: 0;
+    width: 25px;
+    height: 100%;
+    font-family: "FontAwesome";
+    font-size: 22px;
+    color: #000;
+}
+ul li.address::before{
+    content: "\f041";
+}
+ul li.phone::before{
+    content: "\f095";
+}
+ul li.mail::before{
+    content: "\f0e0";
+}
+ul li.website::before{
+    content: "\f0ac";
+}
+textarea{
+    height: 150px;
+    resize: none;
+}
+.form-info  input, textarea{
+    outline: none;
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+    font-size: 18px;
+    text-align: left;
+    display: grid;
+    border: 2px solid #bbbbbb;
+    border-radius: 6px;
+}
+.form-info .form-submit button{
+    padding: 10px 30px;    
+    font-size: 18px;
+    
+    line-height: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    background: linear-gradient(to left, black 50%, wheat 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.form-info .form-submit button:hover{
+    background-position: left;
+    color: black;
+}
+.form-info .form-input input:focus, textarea:focus{
+    border: 2px solid rgb(211, 90, 4);
+}
+#mybtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:sienna;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  
+  #mybtn:hover {
+    background-color:wheat;
+    color: sienna;
+  }
+  #footer{
+      margin-top: 30px;
+    background-color:black;
+    color: white; 
+    padding: 70px 0 0 ;
+  }
+  .footer-container{
+    max-width: 1170px;
+    margin: auto;
+    
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .colfooter{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .colfooter ul{
+    list-style: none;
+  }
+  .colfooter h4{
+    
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  .colfooter .gov{
+    margin-top: 15px;
+  }
+  .colfooter ul li{
+    margin-bottom: 10px;
+
+  }
+  .colfooter ul li a{
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    font-weight: 100;
+  }
+  .colfooter ul li:hover a{
+    color:sienna ;
+    padding-left: 6px;
+  }
+  
+  .colfooter .social-icon a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin:0  10px 10px 0 ;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .2);
+    color: #ffff;
+  }
+  .colfooter .social-icon a:hover{
+    
+    color: sienna;
+  }
+  .copy{
+    padding: 10px 0;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #bbbbbb;
+  }
+@media (min-width:740px) and (max-width:1023px){
+    .row-container .col-container{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .content-block ul li{
+        font-size: 32px;
+    }
+    .content-block ul li::before{
+        font-size: 44px ;
+    }
 }
 @media (max-width:740px){
     #header{
@@ -112,5 +333,20 @@ ssss*/
     .menu-nav{
         display: inline-block;
     }
+    #slider .text-heading{
+        font-size: 16px;
+    }
+    .row-container .col-container{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 
+    .colfooter{
+        width: 50%;
+        margin-bottom: 30px;
+      }
+      .colfooter .gov img{
+        width: 100%;
+        height: auto;
+      }
 }

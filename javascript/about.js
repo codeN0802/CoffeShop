@@ -31,15 +31,37 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  
+}
+var myheader = document.getElementById('header');
+function changecolor(){
+  
+  var scrollValue = window.scrollY;
+  
+  if(scrollValue < 665 ){
+    myheader.classList.remove('bgColor');
+    myheader.classList.add('bgColorx')
+  }else{
+    myheader.classList.remove('bgColorx');
+    myheader.classList.add('bgColor');
+  }
+}
+window.addEventListener('scroll',changecolor);
+var mobileMenu = document.getElementById('mobile-menu-nav');
+var heiderheight = myheader.clientHeight
+mobileMenu.onclick = function(){
+  var isOpen = myheader.clientHeight === heiderheight;
+  if(isOpen){
+    myheader.style.height = 'auto';
+  }else{
+    myheader.style.height = null;
+  }
 }
