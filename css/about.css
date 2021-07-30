@@ -24,12 +24,12 @@ body, html {
 
 .bgimg-2 {
   background-image: url("https://www.wjhl.com/wp-content/uploads/sites/98/2021/04/GettyImages-1191285127.jpg?w=876&h=493&crop=1");
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .bgimg-3 {
   background-image: url("https://quogueclub.com/wp-content/uploads/2020/11/Coffee.png");
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .caption {
@@ -219,11 +219,30 @@ body, html {
 	animation: animate 4s ease-in-out infinite;
 }
 #slider .bgimg-1 .caption .border{
-	font-size: 40px;
+	font-size: 60px;
 	text-align: justify;
 	padding-bottom: auto;
 	font-family:Snell Roundhand, cursive;
 	font-style: italic;
+	color: white;
+	
+}
+#slider .bgimg-2 .caption .border{
+	font-size: 25px;
+	text-align: justify;
+	padding-bottom: auto;
+	font-family:Snell Roundhand, cursive;
+	font-style: italic;
+	color: white;
+	
+}
+#slider .bgimg-3 .caption .border{
+	font-size: 25px;
+	text-align: justify;
+	padding-bottom: auto;
+	font-family:Snell Roundhand, cursive;
+	font-style: italic;
+	color: white;
 	
 }
 #footer{
