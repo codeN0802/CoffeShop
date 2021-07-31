@@ -4,9 +4,275 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-    
+    <div id="app">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="about.html">About</a>
+
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="menu.html">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="menu.html#ca-phe">Coffee</a></li>
+                        <li><a href="menu.html#tra">Tea</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div id="mobile-menu-nav" class="menu-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+			
+
+        </div>
+        <div id="slider">
+            <div class="text-heading">
+                <p><a href="index.html"><i class="fa fa-home"></i>Home</a> > Menu</p>
+            </div>
+        </div>
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                    <div class="col-SideBar">
+                        <aside class="SideBar-Menu">
+                            <ul>
+                                <li><a class="menu_scroll_link" href="#ca-phe">Cà Phê</a></li>
+                                <li><a class="menu_scroll_link" href="#tra">Trà</a></li>
+                                <li><a href="">Đá xay (Sắp ra)</a></li>
+                                <li><a href="">Sinh tố (Sắp ra)</a></li>
+                                <li><a href="">Snack (Sắp ra)</a></li>
+                                <li><a href="">Kem (Sắp ra)</a></li>
+                                
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-right">
+                        <div class="block_menu_item" id="ca-phe">
+                            <h3 class="block_menu_item_title">
+                                <span class="line">CÀ PHÊ</span>
+                            </h3>
+                            <div class="menu-list">
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/cafe-den-da_18234c186f2f44f0a2d7ec1ce0e58158_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Cà phê đen</h3>
+                                        <div class="price">32,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/cafe-sua-da_9073dfe2143d428a91a370e79df77e49_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Cà phê sữa</h3>
+                                        <div class="price">35,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/espresso-nong_4b32833e9a5f48768ea5d5d2a4df0303_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Espreso Hot</h3>
+                                        <div class="price">40,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/latte-nong_ffcd92de11f74937bce4197823246d07_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Latte Hot</h3>
+                                        <div class="price">42,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/mocha-nong_66ebb6f03a874a4391fc80ad69264ea5_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Mocha Hot</h3>
+                                        <div class="price">45,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="block_menu_item" id="tra">
+                            
+                            <h3 class="block_menu_item_title">
+                                <span class="line">Trà</span>
+                            </h3>
+                            <div class="menu-list">
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/hong-tra-sua_34930e4739c443d59a9319c746b47bae_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Hồng Trà Sữa</h3>
+                                        <div class="price">35,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/matcha-macchiato_c37b0e0c1c714d0091ee4f3052088193_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Macha Machiato</h3>
+                                        <div class="price">50,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/tra-dao-cam-sapng_58268b7877cd4209b8fc3fa1d4909511_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Trà Đào Cam Sả</h3>
+                                        <div class="price">40,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/tra-den-macchiato_facfdd980ca547be93974edb7f16d3b7_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Trà Đen Machiato</h3>
+                                        <div class="price">45,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/tra-pbt_d8ab6bfe329e488386e940bb9672e3dd_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Trà Phúc Bồn Tử</h3>
+                                        <div class="price">40,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/ht-latte-macchiato_fe7fa1571b974b48a5d750bd2e9e84eb_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Latte Machiato</h3>
+                                        <div class="price">50,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-item-image">
+                                        <img src="img/605da09f717e5d00114a3cd8_app_long_nhan_hat_chia_copy-min_15afd5872ab74b5fbb55414e965768bd_large.webp">
+                                    </div>
+                                    <div class="menu-item-info">
+                                        <h3>Trà Vải</h3>
+                                        <div class="price">30,000Đ</div>
+                                        <div class="form-submit">
+                                            <button type="submit">Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <button id="mybtn" onclick="topFunction()" title="Go to top">
+        <i class="fa fa-home"></i>
+    </button>
+    <div id="footer">
+        <div class="footer-container">
+            <div class="rowfooter">
+                <div class="colfooter">
+                    <h4>LowLand</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Address</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                    <div class="gov">
+                        <a target="_blank" rel="nofollow" href="http://online.gov.vn/Home/WebDetails/48042"><img width="180" src="//theme.hstatic.net/1000075078/1000610097/14/gov.png?v=684" alt="gov"></a>
+                    </div>
+                </div>
+                <div class="colfooter">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Cash voucher</a></li>
+                        <li><a href="#">Exchange</a></li>
+                    </ul>
+                </div>
+                <div class="colfooter">
+                    <h4>Delivery</h4>
+                    <ul>
+                        <li><a href="#">Delivery 1800 6936 (07:00-21:00)</a></li>
+                        <li><a href="#">Support 028.71.087.088 (07:00-21:00)</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="colfooter">
+                    <h4>Follow us</h4>
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Copyright © 2021 LowLand. All rights reserved</p>
+            </div>
+        </div>
+        
+        
+    </div>
+        <script src="javascript/contact.js"></script>
+    </div>
 </body>
 </html>
