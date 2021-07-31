@@ -224,15 +224,16 @@
 }
 .menu-item .menu-item-image{
     position: relative;
+    overflow: hidden;
 }
 .menu-item .menu-item-image img{
     width: 100%;
     border: none;
     height: auto;
+    transition: .7s;
 }
-.menu-item-image:hover img{
-    -webkit-transform: scale(10px);
-    transform: scale(10px);
+.menu-item-image img:hover{
+    -webkit-transform: scale(1.2);
 }
 .menu-item .menu-item-info{
     padding: 12px 15px;
