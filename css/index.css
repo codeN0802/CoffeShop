@@ -49,9 +49,7 @@
     text-decoration: none;
     padding: 0 24px;
     line-height: 56px;
-    
     transition:color 0.5s  ease;
-
 }
 #nav > li:hover .subnav{
     display: block;
@@ -68,6 +66,7 @@
     background-color: #fff;
     list-style-type: none;
     min-width: 160px;
+	border-radius: 0 0 10px 10px;
 }
 #nav .subnav a{
     color: sienna;
@@ -80,6 +79,7 @@
 }
 .subnav li:hover {
     background-color: wheat;
+	border-radius: 0 0 10px 10px;
 }
 .subnav li:hover a{
     transform: translateX(10px);

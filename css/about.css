@@ -132,6 +132,7 @@ body, html {
     background-color: #fff;
     list-style-type: none;
     min-width: 160px;
+	border-radius: 0 0 10px 10px;
 }
 #nav .subnav a{
     color: sienna;
@@ -144,6 +145,7 @@ body, html {
 }
 .subnav li:hover {
     background-color: wheat;
+	border-radius: 0 0 10px 10px;
 }
 .subnav li:hover a{
     transform: translateX(10px);
