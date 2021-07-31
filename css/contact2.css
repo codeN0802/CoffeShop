@@ -51,6 +51,7 @@ ssss*/
     list-style-type: none;
     background-color: white;
     min-width: 160px;
+	border-radius: 0 0 10px 10px;
 }
 #nav .subnav a{
     color: sienna;
@@ -62,6 +63,7 @@ ssss*/
 }
 #nav .subnav li:hover{
     background-color: wheat;
+	border-radius: 0 0 10px 10px;
 }
 #nav .subnav li:hover a{
     transform: translateX(10px);
