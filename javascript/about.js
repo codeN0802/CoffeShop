@@ -1,7 +1,14 @@
 var myheader = document.getElementById('header')
 var mobileMenu = document.getElementById('mobile-menu-nav');
 var heiderheight = myheader.clientHeight
-
+mobileMenu.onclick = function(){
+    var isOpen = myheader.clientHeight === heiderheight;
+    if(isOpen){
+        myheader.style.height = 'auto';
+    }else{
+        myheader.style.height = null;
+    }
+}
 
 var mybutton = document.getElementById("mybtn");
 
@@ -21,14 +28,11 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 function changecolor(){
   
   var scrollValue = window.scrollY;
   
-  
-  
-  if(scrollValue < 400){
+  if(scrollValue < 400 ){
     myheader.classList.remove('bgColor');
     myheader.classList.add('bgColorx')
   }else{
