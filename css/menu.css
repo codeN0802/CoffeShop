@@ -11,7 +11,7 @@
 }
 #header{
     height: 56px;
-    background-color: black;
+	background-color: black;
     position: fixed;
     top :0;
     right: 0;
@@ -53,6 +53,7 @@
     list-style-type: none;
     background-color: white;
     min-width: 160px;
+	border-radius: 0 0 10px 10px;
 }
 #nav .subnav a{
     color: sienna;
@@ -64,6 +65,7 @@
 }
 #nav .subnav li:hover{
     background-color: wheat;
+	border-radius: 0 0 10px 10px;
 }
 #nav .subnav li:hover a{
     transform: translateX(10px);
@@ -148,6 +150,7 @@
 .SideBar-Menu{
     background-color: #fff;
     display: block;
+	border-radius: 10px;
 }
 .SideBar-Menu ul
 {
@@ -214,22 +217,23 @@
 }
 .menu-item{
     background-color: #fff;
-   
+	border-radius: 20px;
     margin: 0 15px 30px;
     min-height: 145px;
     overflow: hidden;
 }
 .menu-item .menu-item-image{
     position: relative;
+    overflow: hidden;
 }
 .menu-item .menu-item-image img{
     width: 100%;
     border: none;
     height: auto;
+    transition: .7s;
 }
-.menu-item-image:hover img{
-    -webkit-transform: scale(10px);
-    transform: scale(10px);
+.menu-item-image img:hover{
+    -webkit-transform: scale(1.2);
 }
 .menu-item .menu-item-info{
     padding: 12px 15px;
@@ -257,7 +261,7 @@
 .form-submit button{
     padding: 6px 15px;    
     font-size: 18px;
-    
+    border-radius: 10px;
     line-height: 20px;
     background-color:#EA8025;
     color: white;
